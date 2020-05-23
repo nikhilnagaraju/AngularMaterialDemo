@@ -1,0 +1,21 @@
+<div class="home-page-container">
+  <div fxLayout="row" fxLayoutAlign="space-between stretch">
+    <div fxFlex></div>
+    <div fxFlex="85">
+      <div fxLayout="column" *ngIf="usersData && !apiError" fxLayoutAlign="center center" fxLayoutGap="2%">
+        <app-user-stats fxFlexFill fxFlexAlign='center' [users]="usersData"></app-user-stats>
+        <div fxFlexFill fxFlexAlign='center'>
+          <h2>User Data table</h2>
+          <app-user-data-tab [users]="usersData"></app-user-data-tab>
+        </div>
+      </div>
+      <div *ngIf="showProgress" fxLayout="row" fxLayoutAlign="space-around center" class="spinner-container">
+        <mat-progress-spinner [color]="'primary'" [diameter]="100" [mode]="'indeterminate'">
+        </mat-progress-spinner>
+      </div>
+      <div *ngIf="apiError" fxLayout="row" fxLayoutAlign="space-around center" class="error">
+        Error in Fetching data from API</div>
+    </div>
+    <div fxFlex></div>
+  </div>
+</div>

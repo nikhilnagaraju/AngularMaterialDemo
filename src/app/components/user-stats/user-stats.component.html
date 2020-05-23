@@ -1,0 +1,26 @@
+<h1>Users Dashboard</h1>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around stretch"
+  fxLayoutAlign.gt-md="space-evenly stretch" fxLayoutGap.lg="1%" fxLayoutGap.md="2%" fxLayoutGap.lt-md="5%">
+  <div fxFlex.lt-md="100%" fxFlex.md="50%" fxFlex.lg="30%" class="pie-chart-container">
+    <div style="display: block;">
+      <canvas baseChart [options]="chartOptions" [data]="chartData" [labels]="chartLabels"
+        [chartType]="chartType"></canvas>
+    </div>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="space-around stretch" fxLayoutGap="3%" fxFlex.lt-md="100%" fxFlex.md="50%"
+    fxFlex.lg="30%">
+    <div fxFlex="60%" fxFlex.lt-md="100%">
+      <div fxFlexFill fxLayout="column" fxLayoutAlign="center center" class="stats">
+        <span>{{userBasePercentage}}%<mat-icon>arrow_drop_up</mat-icon></span>
+        <span class="info">Perc. of users fetched out of 10</span>
+      </div>
+    </div>
+    <div fxFlex="40%" fxFlex.lt-md="100%">
+      <div fxFlexFill fxLayout="column" fxLayoutAlign="center start" class="user-info">
+        <div class="info"><span class="info-label">Name : </span>{{users[0].name}}</div>
+        <div class="info"><span class="info-label">Username : </span>{{users[0].username}}</div>
+        <div class="info"><span class="info-label">Email : </span>{{users[0].email}}</div>
+      </div>
+    </div>
+  </div>
+</div>
