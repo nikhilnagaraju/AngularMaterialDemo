@@ -15,7 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Demo URL
-Content served using Github pages on https://www.nikhilnagaraju.github.io/AngularMaterialDemo/
+Content served using Github pages on https://nikhilnagaraju.github.io/AngularMaterialDemo/
 
 The build can be seen on https://github.com/nikhilnagaraju/AngularMaterialDemo/tree/gh-pages
 
