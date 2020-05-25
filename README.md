@@ -22,6 +22,7 @@ The build can be seen on https://github.com/nikhilnagaraju/AngularMaterialDemo/t
 ### Dependancies
 * [Angular Material](https://material.angular.io)
 * [Angular Flex Layout](https://github.com/angular/flex-layout)
+* [Angular Charts ng2-charts](https://github.com/valor-software/ng2-charts)
 
 #### Demo Backend API
 [Json PlaceHolder](https://jsonplaceholder.typicode.com)
